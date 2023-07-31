@@ -1,18 +1,17 @@
 from argparse import ArgumentParser, Namespace
 
 """
-    This function defines this applications arguments and,
-    returns a Namespace of the argument called in the console
+    This function defines this applications arguments & returns a Namespace of the arguments called in the console
 """
 def args() -> Namespace:
     # initialize the ArgumentParser
     parser = ArgumentParser(
         prog="ytcli",
-        description="an original description",
-        epilog="an original epilog"
+        description="A command-line application for downloading youtube videos",
+        epilog="Youtube links must be wrapped around double quotes!"
     )
 
-    # by adding arguments to the application_parser instead of the parser we can insure that,
+    # by adding arguments to the application_parser instead of the parser we can ensure that,
     # only one argument can be called at a time
     application_parser = parser.add_mutually_exclusive_group()
 

@@ -63,7 +63,7 @@ class YoutubeService:
         except Exception as e:
             print("Error: Something unexpected happened :(")
 
-    #
+    # This method downloads a Youtube video from the specified link at 160kbps
     def download_160kpbs(self, link):
         try:
             YouTube(link).streams.get_by_itag(self.ITAG_160kbps).download(output_path=self.download_path)
@@ -78,7 +78,7 @@ class YoutubeService:
         except Exception as e:
             print("Error: Something unexpected happened :(")
 
-    #
+    # This method downloads a Youtube video from the specified link at 128kbps
     def download_128kpbs(self, link):
         try:
             YouTube(link).streams.get_by_itag(self.ITAG_128kbps).download(output_path=self.download_path)
@@ -93,7 +93,7 @@ class YoutubeService:
         except Exception as e:
             print("Error: Something unexpected happened :(")
 
-    #
+    # This method downloads a Youtube video from the specified link at 70kbps
     def download_70kpbs(self, link):
         try:
             YouTube(link).streams.get_by_itag(self.ITAG_70kbps).download(output_path=self.download_path)
@@ -108,7 +108,7 @@ class YoutubeService:
         except Exception as e:
             print("Error: Something unexpected happened :(")
 
-    #
+    # This method downloads a Youtube video from the specified link at 50kbps
     def download_50kpbs(self, link):
         try:
             YouTube(link).streams.get_by_itag(self.ITAG_50kbps).download(output_path=self.download_path)
